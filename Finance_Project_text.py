@@ -7,6 +7,13 @@ import joblib
 from datetime import datetime, timedelta
 import openai
 
+from dotenv import load_dotenv
+import os
+ 
+# Load environment variables from .env
+load_dotenv()
+openai.api_key = os.getenv("OPENAPI_KEY")
+
 
 number = 4
 
