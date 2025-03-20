@@ -1,0 +1,60 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+ 
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+new_env/
+ 
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+ 
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+ 
+# Virtual environment configuration
+Pipfile
+Pipfile.lock
+poetry.lock
+ 
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+ 
+# Log files
+logs/
+*.log
+*.out
+*.err
+ 
+# Database and cache files
+*.sqlite3
+*.db
+*.sqlite
+ 
+# Environment variables
+.env
+.envrc
+*.secret
+config.yaml
+config.json
+ 
+# IDE-specific files
+.vscode/
+.idea/
+*.sublime-workspace
+ 
+# Docker
+docker-compose.override.yml
+ 
+# macOS and Windows system files
+.DS_Store
+Thumbs.db
