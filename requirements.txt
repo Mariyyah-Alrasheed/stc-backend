@@ -22,7 +22,7 @@ idna==3.10
 itsdangerous==2.2.0
 Jinja2==3.1.5
 joblib==1.4.2
-keras==2.12.0  # Downgraded to 2.12.0 for compatibility with tensorflow 2.12
+keras==2.12.0
 libclang==18.1.1
 Markdown==3.7
 markdown-it-py==3.0.0
@@ -32,7 +32,7 @@ ml-dtypes==0.4.1
 multidict==6.1.0
 multitasking==0.0.11
 namex==0.0.8
-numpy==1.23.5  # Downgraded to 1.23.5 for compatibility with tensorflow and other libraries
+numpy==1.23.5
 openai==0.28.0
 opt_einsum==3.4.0
 optree==0.14.1
@@ -41,7 +41,7 @@ pandas==2.2.3
 peewee==3.17.9
 platformdirs==4.3.6
 propcache==0.3.0
-protobuf==5.29.3
+protobuf==3.20.3  # Downgraded to 3.20.3 for compatibility with tensorflow and tensorboard
 Pygments==2.19.1
 python-dateutil==2.9.0.post0
 pytz==2025.1
