@@ -1,58 +1,3 @@
-# from flask import Flask, jsonify, request
-# from Finance_Project_text import predict_next_40_days, generate_investment_advice
-# from flask_cors import CORS 
-
-# app = Flask(__name__)
-
-# CORS(app)
-
-# # Basic root route
-# @app.route('/')
-# def index():
-#     return "Welcome to the Finance Prediction API!"
-# # API to get stock predictions
-# @app.route('/api/predict', methods=['GET'])
-# def predict_stock():
-#     company = request.args.get('company', 'AAPL')  # Default to Apple stock
-#     # days = request.args.get('days', 7)
-#     model_path = "apple_stock_model.keras"  # Update with correct model path
-#     scaler_path = "apple_scaler.pkl"  # Update with correct scaler path
-
-#     try:
-#         dates, prices = predict_next_40_days(company, model_path, scaler_path)
-#         return jsonify({"company": company, "dates": dates, "prices": prices.tolist()})
-#     except Exception as e:
-#         return jsonify({"error": str(e)}), 500
-
-# # API to get investment advice
-# @app.route('/api/investment_advice', methods=['GET'])
-# def investment_advice():
-#     company = request.args.get('company', 'AAPL')  # Default to Apple stock
-#     model_path = "apple_stock_model.keras"  
-#     scaler_path = "apple_scaler.pkl"  
-
-#     try:
-#         _, prices = predict_next_40_days(company, model_path, scaler_path)
-#         advice = generate_investment_advice(prices, company)
-#         return jsonify({"company": company, "investment_advice": advice})
-#     except Exception as e:
-#         return jsonify({"error": str(e)}), 500
-
-# if __name__ == '__main__':
-#     app.run(debug=True)
-
-
-
-# ///////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
 
 
 
@@ -143,7 +88,7 @@ CORS(app)
 
 # Mapping of companies to their model and scaler paths
 company_model_mapping = {
-    'AAPL': {'model': 'apple_stock_model.keras', 'scaler': 'apple_scaler.pkl'},
+    'AAPL': {'model': 'models/apple_stock_model.keras', 'scaler': 'models/apple_scaler.pkl'},
     'MSFT': {'model': 'microsoft_stock_model.keras', 'scaler': 'microsoft_scaler.pkl'},
     'GOOGL': {'model': 'google_stock_model.keras', 'scaler': 'google_scaler.pkl'},
     # Add more companies here as needed
